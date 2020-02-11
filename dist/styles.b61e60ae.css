@@ -1,0 +1,526 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+b,
+ul,
+li,
+aside,
+footer,
+header,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+aside,
+footer,
+header,
+section{
+	display: block;
+}
+
+html{
+	font-size: 16px;
+}
+
+body{
+	line-height: 1;
+}
+
+ol,
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+.svg-iconmonstr-facebook-1 {
+	background: url("/icons-052fd915.7ce4e8d5.svg") 0 0 no-repeat;
+}
+
+.svg-iconmonstr-facebook-1-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-iconmonstr-google-plus-1 {
+	background: url("/icons-052fd915.7ce4e8d5.svg") 33.333333333333336% 33.333333333333336% no-repeat;
+}
+
+.svg-iconmonstr-google-plus-1-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-iconmonstr-linkedin-1 {
+	background: url("/icons-052fd915.7ce4e8d5.svg") 66.66666666666667% 66.66666666666667% no-repeat;
+}
+
+.svg-iconmonstr-linkedin-1-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-iconmonstr-twitter-1 {
+	background: url("/icons-052fd915.7ce4e8d5.svg") 100% 100% no-repeat;
+}
+
+.svg-iconmonstr-twitter-1-dims {
+	width: 24px;
+	height: 24px;
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src:
+    url("/Raleway-Regular.05575d74.woff2") format("woff2"),
+    url("/Raleway-Regular.5f653bc6.woff") format("woff"),
+    url("/Raleway-Regular.93d7aa71.eot") format("embedded-opentype"),
+    url("/Raleway-Regular.01c7f1d7.ttf") format("truetype");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src:
+    url("/Raleway-Regular.30bdd311.woff2") format("woff2"),
+    url("/Raleway-Regular.d7e25ce7.woff") format("woff"),
+    url("/Raleway-Regular.c5a04629.eot") format("embedded-opentype"),
+    url("/Raleway-Regular.17208138.ttf") format("truetype");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src:
+    url("/Raleway-Bold.d4af18f8.woff2") format("woff2"),
+    url("/Raleway-Bold.2e246bc8.woff") format("woff"),
+    url("/Raleway-Bold.366fbf4a.eot") format("embedded-opentype"),
+    url("/Raleway-Bold.a1279233.ttf") format("truetype");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src:
+    url("/Raleway-Bold.09ed9b06.woff2") format("woff2"),
+    url("/Raleway-Bold.5ec31ee5.woff") format("woff"),
+    url("/Raleway-Bold.544daae6.eot") format("embedded-opentype"),
+    url("/Raleway-Bold.616770bd.ttf") format("truetype");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: swap;
+}
+
+body {
+    font-family: Releway, Helvetica, sans-serif;
+    color: #595241;
+
+    line-height: 1.4em;
+}
+
+/* header */
+.header {
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left: 0;
+
+    width: 100%;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+
+    background: #B8AE9C;
+}
+
+.header__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    width: 100%;
+    max-width: 64em;
+}
+
+.header__logo {
+    height: 2.5em;
+}
+
+.header__nav-icon {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: 1.75em;
+    height: 1.25em;
+
+    cursor: pointer;
+}
+
+.header__nav-icon > div {
+    content: "";
+
+    width: 100%;
+    height: .125em;
+
+    background: #595241;
+}
+
+.header__nav-items {
+    position: absolute;
+    left: 0;
+    top: 3.6em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height .5s ease-out;
+}
+.header__nav-items--show {
+    max-height: 9.5em;
+}
+
+.header__nav-item {
+    padding: .5em;
+
+    color: #595241;
+    background: #ACCFCC;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width: 64.375em) {
+    .header__logo {
+        height: 3.5em;
+    }
+
+    .header__nav-icon {
+        display: none;
+    }
+
+    .header__nav-items {
+        position: static;
+        display: block !important;
+        max-height: inherit;
+    }
+
+    .header__nav-item {
+        background: transparent;
+    }
+}
+
+/* main content layout */
+.main-content {
+    max-width: 50em;
+    margin-top: 2.5em;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 0.5em;
+    padding-bottom: 0;
+    padding-left: 0.5em;
+}
+
+.main-content--overlay {
+
+}
+
+.main-content__section {
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+
+/* mission */
+.mission__motto {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 0.5em;
+
+    background-color: rgba(184, 174, 156, .7);
+
+    text-align: center;
+    font-size: 1.3em;
+}
+
+@media (min-width: 750px) {
+    .mission__image {
+        background-image: url(/bench.f5c10d86.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 25%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 750px) {
+    .mission__image {
+        background-image: url(/bench@2x.9ce4e656.jpeg);
+    }
+}
+
+.main-content__section-header {
+    margin-bottom: 1em;
+
+    color: #8A0917;
+
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+/* our work */
+.portfolio__list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 2em;
+}
+
+.portfolio__item {
+    width: 50%;
+    padding: 0.2em;
+}
+
+.working img {
+    width: 100%;;
+}
+
+/* services */
+/*https://css-tricks.com/text-blocks-over-image/*/
+.services__service {
+    position: relative;
+    background-color: lightgrey;
+    margin-bottom: 1em;
+    /*The image has a 16/9 ratio. Until the image has loaded
+  we need to reserve some space so the page won't reflow.
+  How to calculate the space (padding-bottom): 9/16*100 = 56.25
+  Another example: you have an image 400x250.
+  So if you want to calculate the space you do: 250/400*100 = 62.5*/
+    padding-bottom: 56.25%;
+    height: 0;
+
+}
+
+/* http://bennettfeely.com/clippy/ */
+.services__image--variant1 {
+    clip-path: polygon(50% 0%, 95% 13%, 100% 68%, 83% 95%, 25% 100%, 0 90%, 6% 8%);
+}
+
+.services__image--variant2 {
+    clip-path: polygon(39% 1%, 96% 2%, 99% 31%, 94% 92%, 64% 88%, 7% 92%, 1% 16%);
+}
+
+.services__image--variant3 {
+    clip-path: polygon(1% 2%, 88% 3%, 99% 52%, 92% 100%, 40% 100%, 2% 95%, 7% 51%);
+}
+
+.services__image--variant4 {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.services__image--variant5 {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.services__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.services__overlay span {
+    color: white;
+    font-weight: bold;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+@media (min-width: 46.875em) {
+    .services__overlay span {
+        font-size: 2rem;
+    }
+}
+
+/* testimonials */
+.testimonial_quote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    line-height: 1.3em;
+}
+
+.testimonial_quote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    display: block;
+}
+
+.testimonial_quote p {
+    display: inline;
+}
+
+/* desert animation */
+.desert .desert__animation {
+    background-image: url("/desert.228377ee.jpg");
+    overflow: hidden;
+    max-width: 400px;
+    height: 484px;
+    margin: 20px auto;
+    position: relative;
+    animation: desertMove 8s linear infinite;
+}
+
+@keyframes desertMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -800px 0%;
+    }
+}
+
+.desert__tumbleweed {
+    width: 50px;
+    height: 56px;
+    background-image: url("/tumbleweed.849663eb.png");
+    position: absolute;
+    top: 400px;
+    right: -50px;
+    z-index: 2;
+    animation: tumbleweed 5s ease-in 0s infinite;
+}
+
+.desert__tumbleweed.desert__tumbleweed--variant1 {
+    top: 340px;
+    right: -100px;
+    animation-duration: 4s;
+}
+
+.desert__tumbleweed.desert__tumbleweed--variant2 {
+    top: 300px;
+    right: -90px;
+    animation-duration: 6s;
+}
+
+.desert__tumbleweed.desert__tumbleweed--variant3 {
+    top: 400px;
+    right: -80px;
+    animation-duration: 5s;
+}
+
+.desert__tumbleweed.desert__tumbleweed--variant4 {
+    top: 370px;
+    right: -60px;
+    animation-duration: 6.5s;
+}
+
+@keyframes tumbleweed {
+    0% {
+    }
+    100% {
+        right: 400px;
+        transform: rotate(-1080deg);
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 16px;
+}
+
+.actions__action a {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+/* footer */
+.footer {
+    padding: .5em;
+
+    background-color: rgba(138, 9, 23, .9);
+}
+
+.footer__text {
+    color: white;
+
+    font-size: .75em;
+    text-align: center;
+}
+
+/* playing with typing animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+.typing {
+    font: bold 200% Consolas, Monaco, monospace;
+    width: 8.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .05em solid;
+    animation: typing 8s steps(15),
+    caret 1s steps(1) infinite;
+}
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
